@@ -19,12 +19,9 @@ Rust programming language. This initiative is split into two main projects:
 
 ## The plan
 
-### DBus 2 (AKA GVariant)
+### Full compatibility with the D-Bus specification
 
-Apart from providing compatible implementations of the existing [D-Bus protocol], the goal is to
-also support D-Bus protocol v2, which in is identical to version 1, but use the [GVariant]
-format[^1]. This format is not only more efficient but also solves some of the issues with version
-1, for example support for nullable types.
+Implement all features that manadated and recommended by the specification.
 
 ### Additional Header Fields
 
