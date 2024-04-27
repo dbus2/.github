@@ -29,22 +29,9 @@ While the D-Bus spec does not allow custom header fields in messages, `busd` wil
 few additional on-demand (only) fields, that are useful for certain applications. One example is
 addition of [peer credentials] on every message, which can avoid round-trips on the bus.
 
-Once implemented and tested, an effort will be made to add these new fields and related API to the
-D-Bus specification.
-
-### Remote Transport
-
-Neither of the current D-Bus implementations support a secure remote transport, which is the reason
-many folks choose not to use D-Bus, despite its many great features. Fortunately, the D-Bus
-specification is transport-agnostic and hence we will be able to provide a secure remote transport
-while maintaining compatibility with the specification.
-
 [D-Bus]: https://www.freedesktop.org/wiki/Software/dbus/
 [`zbus`]: https://github.com/dbus2/zbus
 [`busd`]: https://github.com/dbus2/busd
 [`dbus-broker`]: https://github.com/bus1/dbus-broker
 [D-Bus protocol]: https://dbus.freedesktop.org/doc/dbus-specification.html
-[GVariant]: https://developer.gnome.org/documentation/specifications/gvariant-specification-1.0.html
 [peer credentials]: https://github.com/dbus2/busd/issues/29
-
-[^1]: GVariant was originally planned to be "D-Bus 2" anyway.
