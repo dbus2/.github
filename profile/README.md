@@ -1,4 +1,4 @@
-# D-Bus 2: The future of D-Bus
+# The future of D-Bus happens here
 
 ## Introduction
 
@@ -17,21 +17,7 @@ Rust programming language. This initiative is split into two main projects:
   implementation of D-Bus, `dbus-daemon` and [`dbus-broker`]. `busd` is not yet ready for
   production use.
 
-## The plan
-
-### Full compatibility with the D-Bus specification
-
-Implement all features that manadated and recommended by the specification.
-
-### Additional Header Fields
-
-While the D-Bus spec does not allow custom header fields in messages, `busd` will still support a
-few additional on-demand (only) fields, that are useful for certain applications. One example is
-addition of [peer credentials] on every message, which can avoid round-trips on the bus.
-
 [D-Bus]: https://www.freedesktop.org/wiki/Software/dbus/
 [`zbus`]: https://github.com/dbus2/zbus
 [`busd`]: https://github.com/dbus2/busd
 [`dbus-broker`]: https://github.com/bus1/dbus-broker
-[D-Bus protocol]: https://dbus.freedesktop.org/doc/dbus-specification.html
-[peer credentials]: https://github.com/dbus2/busd/issues/29
