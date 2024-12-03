@@ -1,0 +1,117 @@
+{
+    "version": "v1.0.0",
+    "entity": {
+        "type": "individual",
+        "role": "maintainer",
+        "name": "Zeeshan Ali Khan",
+        "email": "zeenix@gmail.com",
+        "phone": "",
+        "description": "A FOSS developer",
+        "webpageUrl": {
+            "url": "https://github.com/zeenix/"
+        }
+    },
+    "projects": [
+        {
+            "guid": "zbus",
+            "name": "zbus",
+            "description": "A Rust API for D-Bus communication. The goal is to provide a safe and simple high- and low-level API akin to GDBus, that doesn't depend on C libraries.",
+            "webpageUrl": {
+                "url": "https://github.com/dbus2/zbus/"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/dbus2/zbus/"
+            },
+            "licenses": [
+                "spdx:MIT"
+            ],
+            "tags": [
+                "D-Bus",
+                "DBus",
+                "IPC"
+            ]
+        },
+        {
+            "guid": "busd",
+            "name": "busd",
+            "description": "A modern D-Bus bus (broker) implementation. Since it's pure Rust, it's much easier to build for multiple platforms than other D-Bus brokers.",
+            "webpageUrl": {
+                "url": "https://github.com/dbus2/busd"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/dbus2/busd"
+            },
+            "licenses": [
+                "spdx:MIT"
+            ],
+            "tags": [
+                "D-Bus",
+                "DBus",
+                "IPC",
+                "broker"
+            ]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "n26",
+                "type": "bank"
+            },
+            {
+                "guid": "github",
+                "type": "other",
+                "address": "https://github.com/sponsors/zeenix"
+            },
+            {
+                "guid": "btc",
+                "type": "other",
+                "address": "3AVRBN59s1oHMyA3ePMgN7wrbMeEWA2R4Z"
+            }
+        ],
+        "plans": [
+            {
+                "guid": "maintenance",
+                "status": "active",
+                "name": "Maintenance",
+                "description": "Time to review PRs and issues, triage bugs, and keep the project healthy.",
+                "amount": 0,
+                "currency": "EUR",
+                "frequency": "monthly",
+                "channels": [
+                    "n26",
+                    "github",
+                    "btc"
+                ]
+            },
+            {
+                "guid": "ci-expenses",
+                "status": "active",
+                "name": "CI expenses",
+                "description": "Costs for running CI pipelines.",
+                "amount": 50,
+                "currency": "EUR",
+                "frequency": "monthly",
+                "channels": [
+                    "n26",
+                    "github",
+                    "btc"
+                ]
+            },
+            {
+                "guid": "busd-feature-parity",
+                "status": "active",
+                "name": "busd feature parity",
+                "description": "The goal is to make busd enable all essential features expected from a D-Bus broker so it can replace existing brokers: https://github.com/dbus2/busd/issues?q=is%3Aissue+is%3Aopen+label%3A%22feature+parity%22.",
+                "amount": 10000,
+                "currency": "EUR",
+                "frequency": "one-time",
+                "channels": [
+                    "n26",
+                    "github",
+                    "btc"
+                ]
+            }
+        ]
+    }
+}
